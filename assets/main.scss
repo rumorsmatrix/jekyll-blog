@@ -3,3 +3,122 @@
 ---
 
 @import "minima";
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700');
+
+* {
+	font-family: 'Raleway', sans-serif;
+}
+
+a, a:visited {
+	color: #85144b;
+}
+
+code {
+	font-family: monospace;
+}
+
+td {
+	vertical-align: top;
+}
+
+
+.no-wrap { white-space:nowrap; }
+.r { text-align: right; }
+
+
+/* -------- tags -------- */
+
+.tag {
+	display: inline-block;
+	margin-right: 1rem;
+	font-size: 1rem;
+}
+
+.tag-icon {
+	font-size: 85%;
+	color: #999;
+}
+
+#tag-cloud {
+	margin-top: 2rem;
+}
+
+#tag-cloud a {
+	padding-right: 1.4rem;
+}
+
+#tag-cloud .set-1 { font-size: 1.0rem; }
+#tag-cloud .set-2 { font-size: 1.5rem; }
+#tag-cloud .set-3 { font-size: 2.0rem; }
+#tag-cloud .set-4 { font-size: 2.5rem; }
+#tag-cloud .set-5 { font-size: 3.0rem; }
+
+/* -------- header block -------- */
+
+.wrapper {
+
+}
+
+#header-table, #header-table tr, #header-table td {
+	border: none;
+	vertical-align: bottom;
+	padding: 0px;
+}
+
+.site-header {
+	border: none !important;
+	background: #85144b;
+	padding-top: 10rem;
+	padding-bottom: 0rem;
+}
+
+.header-text {
+	padding: 0;
+}
+
+.header-avatar {
+	min-width: 100px;
+	width: 100px;
+	height: 100px;
+}
+
+img.header-avatar {
+	border-radius: 50%;
+}
+
+td.header-avatar {
+	padding-right: 10px !important;
+}
+
+.site-title {
+	padding: 0;
+	line-height: normal !important;
+}
+
+.site-title, .page-link {
+	color: #01FF70 !important;
+}
+
+
+@media screen and (min-width: 601px) {
+	.site-nav {
+		line-height: normal !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.page-link {
+		color: #000000 !important;
+	}
+
+	.footer-col-wrapper p {
+		margin: 1rem;
+	}
+}
+
+
+.post-content > p > img {
+	border-radius: 4px;
+	box-shadow: 0 0 6px 0 #777;
+}
+
