@@ -27,6 +27,8 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
+
+permalink: pretty
 paginate: 8
 paginate_path: "/page/:num/"
 
