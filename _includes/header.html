@@ -9,10 +9,6 @@
 
 			<table id="header-table">
 				<tr>
-					<td class="header-avatar">
-						<img src="assets/images/traveller-avatar.jpg" class="header-avatar">
-					</td>
-
 					<td>
 						<a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 					</td>
@@ -46,10 +42,13 @@
 			<br style="clear: left;">
 
 		</div>
-
-
-
-
-
 	</div>
+
 </header>
+
+<div class="header-avatar">
+	<a href="{{ "/" | relative_url }}">
+		<img src="assets/images/traveller-avatar.jpg">
+	</a>
+</div>
+

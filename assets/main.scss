@@ -13,8 +13,18 @@ a, a:visited {
 	color: #85144b;
 }
 
-code {
+.post-content a[href^="https://github"]::before {
+   font-family: "Font Awesome 5 Brands";
+   content: "\f09b";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 400 !important;
+}
+
+code, pre {
 	font-family: monospace;
+	background: #eee !important;
 }
 
 td {
@@ -68,8 +78,8 @@ td {
 .site-header {
 	border: none !important;
 	background: #85144b;
-	padding-top: 10rem;
-	padding-bottom: 0rem;
+	padding-top: 2rem;
+	height: 200px;
 }
 
 .header-text {
@@ -77,17 +87,18 @@ td {
 }
 
 .header-avatar {
-	min-width: 100px;
-	width: 100px;
-	height: 100px;
-}
-
-img.header-avatar {
+	display: block;
+	margin: -100px auto 0px auto;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
+	z-index: 2;
 }
 
-td.header-avatar {
-	padding-right: 10px !important;
+.header-avatar img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
 }
 
 .site-title {
