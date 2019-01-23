@@ -22,6 +22,16 @@ a, a:visited {
    font-weight: 400 !important;
 }
 
+.post-content a[href^="https://twitter"]::before {
+   font-family: "Font Awesome 5 Brands";
+   content: "\f099";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 400 !important;
+}
+
+
 code, pre {
 	font-family: monospace;
 	background: #eee !important;
@@ -128,7 +138,7 @@ td {
 }
 
 
-.post-content > p > img {
+.post-content > p > img, .post-content > p > a > img {
 	display: block;
 	margin: 2rem auto 2rem auto;
 	border-radius: 4px;
